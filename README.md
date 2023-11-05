@@ -1,7 +1,9 @@
 This project is an attempt to use immudb Vault.
 
 The project includes a simple application that allows you to keep a teacher's grade books.
-Teachers can create new books, insert grades, view grades, improve grades and delete the entire book
+
+Teachers can create new books, insert grades, view grades, improve grades and delete the entire book.
+
 Students and their parents have read-only access, so they can only view grades
 
 Structure of files:
