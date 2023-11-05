@@ -19,7 +19,7 @@ def test_scenario1():
     gradeId = result.json()['documentId']
     # Parents check Student1's grades
     result = bookForParents.checkStudentGrades(student1Id)
-    # Check if '1' grade is in valut
+    # Check if '1' grade is in vault
     assert any(i['document']['value'] == 1 for i in result.json()['revisions']), f"Expected grade 1 but found:" + json.dumps(result.json()['revisions'],indent=2)
     grade['value']=6
     # Parents try to check grade

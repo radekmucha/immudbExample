@@ -39,7 +39,7 @@ class GradeBook:
         content = {"fields": fields, "isUnique":True}
         return requests.post(self.conf.urlCollection + "/indexes",  data=json.dumps(content), headers=self.conf.getHeaders())
 
-    def checkValutStatus(self):
+    def checkVaultStatus(self):
         url = self.conf.urlLedger + "/state"
         response = requests.get(url, headers=self.conf.getHeaders())
         return response.status_code
